@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../JS/Cliente.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class= "consulta mt-4">
+            <div class="row">
+                <div class="col-6">
+                    <h3>
+                        Lista Clientes
+                    </h3>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="table table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Numero Cliente</th>
+                                <th>Nombre</th>
+                                <th>Apellidos</th>
+                                <th>Fecha Registro</th>
+                                <th>Direccion Cliente</th>
+                                <th>RTN</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody id="DataClientes">
+                            
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <div class="Formulario">
+            <div class="row">
+                <div class="col-12">
+                    <h3>
+                        Agregar Cliente
+                    </h3>
+                </div>
+                <div class="col-12">
+                    <form class="cliente">
+                        <label for="">Numero_Cliente</label>
+                        <input type="text" id="Numero_Cliente" class="form-control" placeholder="Ingrese Numero de Cliente">
+                        <label for="">Nombre</label>
+                        <input type="text" id="Nombre" class="form-control" placeholder="Ingrese el Nombre del Cliente">
+                        <label for="">Apellidos</label>
+                        <input type="text" id="Apellidos" class="form-control" placeholder="Ingrese los apellidos">
+                        <label for="">Fecha_Registro</label>
+                        <input type="text" id="Fecha_Registro" class="form-control" placeholder="Ingrese la Fecha de Registro">
+                        <label for="">Direccion_Cliente</label>
+                        <input type="text" id="Direccion_Cliente" class="form-control" placeholder="Ingrese la Direccion del Cliente">
+                        <label for="">RTN</label>
+                        <input type="text" id="RTN" class="form-control" placeholder="Ingrese el RTN del Cliente">
+                        <label for="">Email</label>
+                        <input type="text" id="Email" class="form-control" placeholder="Ingrese el Email del Cliente">
+                        <hr>
+                        <div id="btnagregarcliente">
+                            <input type="submit" id="btnagregar" onclick="AgregarCliente()" value="Ingresar Cliente" class="btn btn-success">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
